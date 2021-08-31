@@ -16,7 +16,7 @@ except:
 
 
 search = "#astrophotography OR #tonystark OR TASM OR lang:en from:@NASA OR #landscapes OR #sunsets OR -donations -win -tools -btc -fund -funds -donation -stay -cosplay -safe -$LIGHT -staysafe -bitcoin -join -podcast -pod (#lightning) OR #todayinhistory OR #galaxies OR hubble OR #mountains"
-interval = 120
+interval = 1200
 
 for tweet in tweepy.Cursor(api.search, search + "lang:en min_faves:10 min_retweets:2 -filter:replies -bollywood -celebrities -politics -sadhguru -art").items():
 
