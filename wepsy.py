@@ -15,10 +15,10 @@ except:
     print("Error during Authentication")
 
 
-search = "#astrophotography OR #tonystark OR TASM OR from:@NASA OR #landscapes OR #sunsets OR -donations -win -tools -btc -fund -funds -donation -stay -cosplay -safe -$LIGHT -staysafe -bitcoin -join -podcast (#lightning) OR #todayinhistory OR #galaxies OR #mountains OR hubble"
+search = "#astrophotography OR #tonystark OR TASM OR from:@NASA OR #landscapes OR #sunsets OR -donations -win -tools -btc -fund -funds -donation -stay -cosplay -safe -$LIGHT -staysafe -bitcoin -join -podcast (#lightning) OR #todayinhistory OR #galaxies OR hubble"
 interval = 60 * 20
 
-for tweet in tweepy.Cursor(api.search, search + "lang:en min_faves:10 min_retweets:2 -filter:replies -bollywood -celebrities -politics -sadhguru -art").items():
+for tweet in tweepy.Cursor(api.search, search + "lang:en min_faves:10 min_retweets:5 -filter:replies -bollywood -celebrities -politics -sadhguru -art").items():
 
     if not tweet.retweeted:
 
