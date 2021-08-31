@@ -24,7 +24,7 @@ for tweet in tweepy.Cursor(api.search, search + "lang:en min_faves:10 min_retwee
 
         try:
             tweet.retweet()
-            print("I retweeted something you like ;)")
+            print("I retweeted something you might like ;)")
             time.sleep(interval)
 
         except tweepy.TweepError as e:
