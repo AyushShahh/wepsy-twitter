@@ -23,7 +23,7 @@ except:
 
 
 search = "#astrophotography OR from:NASA OR from:AstronomyMag OR from:ESA OR from:NatGeoTravel OR from:IndiaHistoryPic OR from:ForbesTech OR from:WIREDScience OR from:ScienceMagazine OR from:NewsfromScience OR from:wired OR from:verge OR from:rajshamani OR from:mashable OR hubble OR HiRISE OR from:MarsMissionImgs OR #Todayinhistory -WIONews OR from:Seeker OR from:archillect OR from:Positive_Call OR from:Inc"
-interval = 60 * 60 * 1.5
+interval = 60 * 10
 
 for tweet in tweepy.Cursor(api.search, search + " lang:en -filter:replies min_faves:10 min_retweets:2").items():
 
